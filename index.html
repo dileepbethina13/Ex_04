@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Exp-4
+</title>
+<meta name="viewport" content="device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style>
+*{
+margin: 0;
+padding: 0;
+}
+.navbar{
+position: sticky;
+top: 0px;
+}
+.header{
+color: white;
+background-color: black;
+width: 100%;
+}
+.x{
+width: 15px;
+}
+.y
+{
+font-size: 75px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-align: center;
+}
+hr{
+position: sticky;
+background-color: black;
+border: 2px solid black;
+top: 50px;
+}
+.navbar li
+{
+display: block;
+padding: 0px;
+width:25%;
+height: 50px;
+background-color: beige;
+text-align: center;
+line-height: 49px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 25px;
+list-style-type:none;
+float:left;
+}
+.navbar li a{
+display: block;
+text-decoration: none;
+color:unset;
+}
+.navbar li:hover{
+background-color: darkblue;
+color: beige;
+}
+.content{
+width: 100%;
+height: 350px;
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/6/6e/A._P._J._Abdul_Kalam.jpg");
+/* background-repeat:; */
+background-size: 900px 500px;
+}
+.innertable
+{
+margin: 0px;
+padding-bottom: 500px;
+font-family: sans-serif;
+border-radius: 15px;
+border-collapse: collapse;
+width: 440px;
+height: 330px;
+background-color: yellow;
+}
+tr.innerrow:nth-child(even){
+background-color: green;
+color: white;
+}
+tr.innerrow{
+text-align: center;
+}
+.register{
+box-shadow: 6px 6px 6px 6px;
+display:inline-block;
+border-radius:15px;
+background-color: white;
+border: 1px solid black;
+width: 400px;
+margin-top: 50px;
+margin-left: 240px;
+height: 350px;
+border: 1px solid black;
+}
+.signup
+{
+display: inline-block;
+text-align:center;
+border-radius:15px;
+background-color: beige;
+border: 1px solid black;
+width: 400px;
+margin-top: 50px;
+margin-left:200px;
+height: 300px;
+border: 1px solid black;
+}
+p.regheader{
+font-family: sans-serif;
+font-size: 38px;
+text-align: center;
+}
+p.fields{
+font-family: sans-serif;
+font-size: 25px;
+padding:40px 0px 0px 10px
+}
+input.name{
+border: none;
+font-family: sans-serif;
+color:black;
+font-size: 18px;
+border-radius: 6px;
+width: 94%;
+height: 35px;
+background-color:beige;
+margin-left: 10px;
+}
+p.passwords{
+padding: 20px 0px 0px 10px;
+font-family: sans-serif;
+font-size: 25px;
+}
+input.submit{
+border-radius: 8px;
+font-family: sans-serif;
+font-size:18px;
+margin: 20px 0px 0px 10px;
+width:94%;
+height: 40px;
+background-color: blue;
+color: white;
+}
+input.submit:hover{
+background-color:#000080;
+}
+.section1{
+width: 100%;
+border-bottom: 5px solid green;
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy_kilKq6J5z4CS42BEV2aptj3P0_KUqq6ow&usqp=CAU")
+}
+footer{
+text-align: center;
+width:100%;
+height:50px;
+font-family: sans-serif;
+font-size: 20px;
+background-color: yellowgreen;
+}
+</style>
+</head>
+<body>
+
+<ul class="navbar">
+<li><a class="navlinks" href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam">Biography</a></li>
+<li><a class="navlinks" href="https://www.britannica.com/biography/A-P-J-Abdul-Kalam">Scientist</a></li>
+<li><a class="navlinks" href="https://www.asme.org/about-asme/honors-awards/joint-awards/hoover-awards/2008#:~:text=Kalam%20has%20received%20the%20coveted,fellow%20of%20many%20professional%20institutions.">Awards</a></li>
+<li><a class="navlinks" href="https://www.indiatoday.in/education-today/gk-current-affairs/story/apj-abdul-kalam-birth-anniversary-1064789-2017-10-14">Timeline</a></li>
+</ul>
+<hr>
+<table class="content">
+<tr>
+<td style="width: 660px;text-align: right;padding-right:50px ;">
+</td>
+<td class="b">
+<table class="innertable">
+<tr class="innerrow">
+<td class="innertd">Kalam has received the coveted civilian awards</td>
+</tr>
+<tr class="innerrow">
+<td class="innertd">Padma Bhushan (1981)</td>
+</tr>
+<tr class="innerrow">
+<td class="innertd">Padma Vibhushan (1990)</td>
+</tr>
+<tr class="innerrow">
+<td class="innertd">he highest civilian honor Bharat Ratna (1997)</td>
+</tr>
+<tr class="innerrow">
+<td class="innertd">He is a recipient of several other awards and a fellow of many professional institutions.</td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+<table class="section1">
+<tr>
+<td>
+<div class="register">
+<p class="regheader"><b>Sign - In</b></p>
+<p class="fields">Username</p>
+<input class="name" type="text" placeholder="Enter Username / Email / Phone Number" required>
+<p class="passwords">Password</p>
+<input class="name" type="password" placeholder="Enter Password"><br><br>
+<input class="submit" type='submit' value="Sign In">
+</div>
+</td>
+<td>
+<div class="register" style="margin-left:100px;margin-top:20px;height:400px;">
+<p class="regheader"><b>Sign - Up</b></p>
+<p class="fields">Name</p>
+<input class="name" type="text" placeholder="Enter Name">
+<p class="fields" style="padding-top:25px;">Email</p>
+<input class="name" type="text" placeholder="Enter Email">
+<p class="passwords">Password</p>
+<input class="name" type="password" placeholder="Enter Password"><br>
+<input class="submit" type='submit' value="Sign In">
+</div></td>
+</tr>
+</table>
+<footer>
+<b><I>
+Address:<br>
+&copy; 2020-2021 (URK19CS1238) - Web Technology Lab Batch 1. All Rights Reserved.</i></b>
+</footer>
+</body>
